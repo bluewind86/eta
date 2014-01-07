@@ -3,11 +3,11 @@
 <mapper namespace="com.bluewind.index.dao.IIndexMapper">
 	
 	<select id="queryAddress" parameterType="java.util.Map" resultType="java.util.Map">
-		SELECT * FROM eshop_address WHERE is_default=1 LIMIT 0,10 
+		SELECT * FROM fn_content LIMIT 0,10 
 	</select>
 	
 	<select id="queryAddressForPage" parameterType="java.util.Map" resultType="java.util.Map">
-		SELECT * FROM eshop_address WHERE is_default=1 
+		SELECT * FROM fn_content_image WHERE 1 
 	</select>
 
 </mapper>

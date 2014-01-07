@@ -17,7 +17,7 @@ PUBLIC "-//ibatis.apache.org//DTD Config 3.0//EN"
 			<property name="pageSqlId" value=".*ForPage.*" />
 		</plugin>
 	</plugins>
-	<!-- 给持久层对象配置个别名，能方便调用 <typeAliases> <typeAlias type="com.oa.dev.domain.User" 
+	<!-- 给持久层对象配置个别名，能方便调用  <typeAliases> <typeAlias type="com.oa.dev.domain.User" 
 		alias="User" /> </typeAliases> -->
 
 	<!-- 接口映射文件的位置 <mappers> <mapper resource="com/oa/dev/persistence/UserMapper.xml" 

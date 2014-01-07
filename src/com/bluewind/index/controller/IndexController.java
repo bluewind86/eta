@@ -16,7 +16,7 @@ import com.bluewind.index.service.IndexService;
 import com.common.paginate.Page;
 
 @Controller
-public class IndexController {
+public class IndexController{
 	
 	@Autowired
 	private IndexService service;
