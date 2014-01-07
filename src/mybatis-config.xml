@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration   
+PUBLIC "-//ibatis.apache.org//DTD Config 3.0//EN"   
+"http://ibatis.apache.org/dtd/ibatis-3-config.dtd">
+<configuration>
+
+
+	<typeHandlers>
+		<typeHandler javaType="java.util.Map" jdbcType="BLOB" handler="com.common.mybatis.typehandler.MapBlobTypeHandler" />
+		<typeHandler javaType="java.lang.Boolean" jdbcType="INTEGER" handler="com.common.mybatis.typehandler.IntBooleanTypeHandler" />	
+			
+	</typeHandlers>
+
+	<plugins>
+		<plugin interceptor="com.common.paginate.PagePlugin">
+			<property name="dialect" value="mysql" />
+			<property name="pageSqlId" value=".*ForPage.*" />
+		</plugin>
+	</plugins>
+	<!-- 给持久层对象配置个别名，能方便调用 <typeAliases> <typeAlias type="com.oa.dev.domain.User" 
+		alias="User" /> </typeAliases> -->
+
+	<!-- 接口映射文件的位置 <mappers> <mapper resource="com/oa/dev/persistence/UserMapper.xml" 
+		/> </mappers> -->
+</configuration> 
